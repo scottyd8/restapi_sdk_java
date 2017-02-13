@@ -3,6 +3,7 @@
 //
 
 package SecureNetRestApiSDK.Api.Requests;
+import SecureNetRestApiSDK.Api.Models.VariablePaymentPlan;
 
 import SNET.Core.HttpMethodEnum;
 
@@ -26,17 +27,17 @@ public class UpdateVariablePaymentPlanRequest  extends SecureNetRequest
         planId = value;
     }
 
-    private Object plan = new Object();
-    public Object getPlan() {
+    private VariablePaymentPlan plan = new VariablePaymentPlan();
+    public VariablePaymentPlan getPlan() {
         return plan;
     }
 
-    public void setPlan(Object value) {
+    public void setPlan(VariablePaymentPlan value) {
         plan = value;
     }
 
     public String getUri() throws Exception {
-        return String.format("api/Customers/%s/PaymentSchedules/variable/%s", getCustomerId(), getPlan().toString());
+        return String.format("api/Customers/%s/PaymentSchedules/variable/%s", getCustomerId(), getPlanId().toString());
     }
 
     public HttpMethodEnum getMethod() throws Exception {

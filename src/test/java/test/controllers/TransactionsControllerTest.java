@@ -51,8 +51,8 @@ public class TransactionsControllerTest
         TransactionsController controller = new TransactionsController();
         // Act
         TransactionSearchResponse response = (TransactionSearchResponse) controller.processRequest(apiContext,request,TransactionSearchResponse.class);
-        Assert.assertTrue(response.toResponseString(), response.getSuccess());
         // Assert
+        Assert.assertTrue(response.toResponseString(), response.getSuccess());
     }
 
     /**
@@ -69,8 +69,8 @@ public class TransactionsControllerTest
         TransactionsController controller = new TransactionsController();
         // Act
         TransactionRetrieveResponse response = (TransactionRetrieveResponse) controller.processRequest(apiContext,request,TransactionRetrieveResponse.class);
-        Assert.assertTrue(response.toResponseString(), response.getSuccess());
         // Assert
+        Assert.assertTrue(response.toResponseString(), response.getSuccess());
     }
 
     /**
@@ -87,8 +87,8 @@ public class TransactionsControllerTest
         TransactionsController controller = new TransactionsController();
         // Act
         TransactionUpdateResponse response = (TransactionUpdateResponse) controller.processRequest(apiContext,request,TransactionUpdateResponse.class);
-        Assert.assertTrue(response.toResponseString(), response.getSuccess());
         // Assert
+        Assert.assertTrue(response.toResponseString(), response.getSuccess());
     }
     
 	private DeveloperApplication getDeveloperApplication() {

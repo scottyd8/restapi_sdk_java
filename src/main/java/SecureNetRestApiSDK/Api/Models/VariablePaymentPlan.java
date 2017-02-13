@@ -7,8 +7,8 @@ import java.util.List;
 
 public class VariablePaymentPlan  extends StoredVariablePaymentPlan 
 {
-    private Date planEndDate = new Date();
-    public Date getPlanEndDate() {
+    private Object planEndDate = new Object();
+    public Object getPlanEndDate() {
         return planEndDate;
     }
 

@@ -19,15 +19,15 @@ public class Encryption
             return this;
         }
          
-        if (StringUtils.equals(passIn.toUpperCase().trim(), "IDTECHmSR"))
+        if (StringUtils.equals(passIn.toUpperCase().trim(), "IDTECHMSR"))
         {
             EncryptionMode = EncryptionModeType.IDTECHmSR.toString();
         }
-        else if (StringUtils.equals(passIn.toUpperCase().trim(), "MAGTEKmSR"))
+        else if (StringUtils.equals(passIn.toUpperCase().trim(), "MAGTEKMSR"))
         {
             EncryptionMode = EncryptionModeType.MAGTEKmSR.toString();
         }
-        else if (StringUtils.equals(passIn.toUpperCase().trim(), "MAGTEKiPAD"))
+        else if (StringUtils.equals(passIn.toUpperCase().trim(), "MAGTEKIPAD"))
         {
             EncryptionMode = EncryptionModeType.MAGTEKiPAD.toString();
         }
