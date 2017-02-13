@@ -186,8 +186,8 @@ public class CustomersControllerTest {
 		recurringbillingretrievepaymentplanrequestreturnssuccessfully(
 				customerId, planId);
 		// Update the Installment Plan
-		/*recurringbillingupdateinstallmentplanrequestreturnssuccessfully(
-				customerId, planId);*/
+		recurringbillingupdateinstallmentplanrequestreturnssuccessfully(
+				customerId, planId);
 		// Delete the Installment Plan
 		recurringbillingdeletepaymentplanrequestreturnssuccessfully(
 				customerId, planId);

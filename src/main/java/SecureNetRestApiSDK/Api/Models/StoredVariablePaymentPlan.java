@@ -9,12 +9,12 @@ import java.util.Date;
 
 public class StoredVariablePaymentPlan   
 {
-    private Date planStartDate = new Date();
-    public Date getPlanStartDate() {
+    private Object planStartDate = new Object();
+    public Object getPlanStartDate() {
         return planStartDate;
     }
 
-    public void setPlanStartDate(Date value) {
+    public void setPlanStartDate(Object value) {
         planStartDate = value;
     }
 
@@ -43,6 +43,23 @@ public class StoredVariablePaymentPlan
 
     public void setNotes(String value) {
         notes = value;
+    }
+    private String softDescriptor = new String();
+    public String getSoftDescriptor() {
+        return softDescriptor;
+    }
+
+    public void setSoftDescriptor(String value) {
+        softDescriptor = value;
+    }
+
+    private String dynamicMCC = new String();
+    public String getDynamicMCC() {
+        return dynamicMCC;
+    }
+
+    public void setDynamicMCC(String value) {
+        dynamicMCC = value;
     }
 
 }

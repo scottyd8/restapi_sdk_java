@@ -12,7 +12,7 @@ public class SecureNetResponse
     private String result;
     private int responseCode;
     private String message;
-    private String responseDate;
+    private String responseDateTime;
     private Object rawRequest;
     private Object rawResponse;
     private Object jsonRequest;
