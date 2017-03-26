@@ -12,7 +12,7 @@ public class SecureNetResponse
     private String result;
     private int responseCode;
     private String message;
-    private String responseDate;
+    private String responseDateTime;
     private Object rawRequest;
     private Object rawResponse;
     private Object jsonRequest;
@@ -49,12 +49,12 @@ public class SecureNetResponse
         message = value;
     }
 
-    public String getResponseDate() {
-        return responseDate;
+    public String getResponseDateTime() {
+        return responseDateTime;
     }
 
-    public void setResponseDate(String value) {
-        responseDate = value;
+    public void setResponseDateTime(String value) {
+        responseDateTime = value;
     }
 
     public Object getRawRequest() {
@@ -84,7 +84,7 @@ public class SecureNetResponse
 	public String toResponseString() {
 		return "SecureNetResponse [success=" + success + ", result=" + result
 				+ ", responseCode=" + responseCode + ", message=" + message
-				+ ", responseDate=" + responseDate + ", rawRequest="
+				+ ", responseDateTime=" + responseDateTime + ", rawRequest="
 				+ rawRequest + ", rawResponse=" + rawResponse
 				+ ", jsonRequest=" + jsonRequest + "]";
 	}

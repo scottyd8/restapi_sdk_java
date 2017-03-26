@@ -6,6 +6,7 @@ package SecureNetRestApiSDK.Api.Requests;
 
 import SNET.Core.HttpMethodEnum;
 import SecureNetRestApiSDK.Api.Models.Card;
+import SecureNetRestApiSDK.Api.Models.ExtendedInformation;
 
 public class CreditRequest  extends SecureNetRequest 
 {
@@ -27,6 +28,20 @@ public class CreditRequest  extends SecureNetRequest
         card = value;
     }
 
+    
+	/**
+     * Additional data to assist in reporting, ecommerce or moto transactions,
+     * and level 2 or level 3 processing. Includes user-defined fields and
+     * invoice-related information.
+     */
+	private ExtendedInformation extendedInformation;
+    public ExtendedInformation getExtendedInformation(){
+        return extendedInformation;
+    }
+
+    public void setExtendedInformation(ExtendedInformation value) {
+        extendedInformation = value;
+    }
     
     public String getUri() throws Exception {
         return "api/Payments/Credit";
