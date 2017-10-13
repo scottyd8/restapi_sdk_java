@@ -34,7 +34,7 @@ public class CreditRequest  extends SecureNetRequest
      * and level 2 or level 3 processing. Includes user-defined fields and
      * invoice-related information.
      */
-	private ExtendedInformation extendedInformation;
+    private ExtendedInformation extendedInformation;
     public ExtendedInformation getExtendedInformation(){
         return extendedInformation;
     }
@@ -49,6 +49,15 @@ public class CreditRequest  extends SecureNetRequest
 
     public HttpMethodEnum getMethod() throws Exception {
         return HttpMethodEnum.POST;
+    }
+    
+    private String authorizationcode = new String();
+    public String getAuthorizationCode() {
+               return authorizationcode;
+    }
+
+    public void setAuthorizationCode(String value) {
+            authorizationcode = value;
     }
 
 }

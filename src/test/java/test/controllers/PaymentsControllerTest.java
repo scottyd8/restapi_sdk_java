@@ -32,6 +32,8 @@ import SecureNetRestApiSDK.Api.Responses.PriorAuthCaptureResponse;
 import SecureNetRestApiSDK.Api.Responses.RefundResponse;
 import SecureNetRestApiSDK.Api.Responses.VoidResponse;
 import test.HelperTest;
+import main.java.SecureNetRestApiSDK.Api.Models.EbtData;
+import main.java.SecureNetRestApiSDK.Api.Requests.CaptureRequest;
 
 public class PaymentsControllerTest {
 	
@@ -96,8 +98,7 @@ public class PaymentsControllerTest {
 
 	/**
 	 * Successful response returned from a Credit Card Present Charge request.
-	 * https
-	 * ://apidocs.securenet.com/docs/creditcardpresent.html?lang=JSON#charge
+	 * https://apidocs.securenet.com/docs/creditcardpresent.html?lang=JSON#charge
 	 */
 	@Test
 	public void creditcardpresentchargerequestreturnssuccessfully()
@@ -113,12 +114,13 @@ public class PaymentsControllerTest {
 		PaymentsController controller = new PaymentsController();
 		// Act
 		ChargeResponse response = (ChargeResponse) controller.processRequest(apiContext, request,ChargeResponse.class);
-		// Assert
+                    // Assert
 		Assert.assertTrue(response.toResponseString(), response.getSuccess());
 		Assert.assertEquals(response.getTransaction().getSoftDescriptor(), helper.getResponseSoftDescriptor());
 		Assert.assertEquals(response.getTransaction().getDynamicMCC(), helper.getResponseDynamicMCC());
 	}
-
+        
+                               
 	/**
 	 * Unit Tests for an IncludeTip AuthorizationOnly request and a subsequent
 	 * PriorAuthCapture request. Tests combined in one method to pass the
@@ -144,8 +146,7 @@ public class PaymentsControllerTest {
 	/**
 	 * Successful response returned from a Credit Card Present Include Tip
 	 * AuthorizationOnly request.
-	 * https://apidocs.securenet.com/docs/creditcardpresent
-	 * .html?lang=JSON#includetip
+	 * https://apidocs.securenet.com/docs/creditcardpresenthtml?lang=JSON#includetip
 	 */
 	private int creditcardpresentincludeTipauthorizationOnlyrequestreturnssuccessfully()
 			throws Exception {
@@ -171,8 +172,7 @@ public class PaymentsControllerTest {
 	/**
 	 * Successful response returned from a Credit Card Present Charge request
 	 * that includes the address.
-	 * https://apidocs.securenet.com/docs/creditcardpresent
-	 * .html?lang=JSON#includeaddress
+	 * https://apidocs.securenet.com/docs/creditcardpresent.html?lang=JSON#includeaddress
 	 */
 	@Test
 	public void creditcardpresentchargerequestincludingaddressreturnssuccessfully()
@@ -218,8 +218,7 @@ public class PaymentsControllerTest {
 	/**
 	 * Successful response returned from a Credit Card Not Present Authorization
 	 * Only request.
-	 * https://apidocs.securenet.com/docs/creditcardnotpresent.html
-	 * ?lang=JSON#authonly
+	 * https://apidocs.securenet.com/docs/creditcardnotpresent.html?lang=JSON#authonly
 	 */
 	private int creditcardnotpresentauthorizationOnlyrequestreturnssuccessfully()
 			throws Exception {
@@ -246,8 +245,7 @@ public class PaymentsControllerTest {
 	/**
 	 * Successful response returned from a Charge-Authorization and Capture
 	 * request.
-	 * https://apidocs.securenet.com/docs/creditcardnotpresent.html?lang
-	 * =JSON#charge
+	 * https://apidocs.securenet.com/docs/creditcardnotpresent.html?lang=JSON#charge
 	 */
 	@Test
 	public void creditcardnotpresentchargeauthorizationandcapturerequestreturnssuccessfully()
@@ -273,8 +271,7 @@ public class PaymentsControllerTest {
 
 	/**
 	 * Successful response returned from an Include Address request.
-	 * https://apidocs
-	 * .securenet.com/docs/creditcardnotpresent.html?lang=JSON#includeaddress
+	 * https://apidocs.securenet.com/docs/creditcardnotpresent.html?lang=JSON#includeaddress
 	 */
 	@Test
 	public void creditcardnotpresentincludeaddresrequestreturnssuccessfully()
@@ -429,6 +426,8 @@ public class PaymentsControllerTest {
 		Assert.assertTrue(response.toResponseString(), response.getSuccess());
 	}
 
+       
+
 	/**
 	 * Successful response returned from a Credit An Account request.
 	 * https://apidocs.securenet.com/docs/credits.html?lang=csharp
@@ -562,7 +561,7 @@ public class PaymentsControllerTest {
 	private Card getCard(){
 		Card card = new Card();
 		card.setAddress(getAddress());
-		card.setCvv("123");
+		card.setCvv("123");              
 		card.setExpirationDate("07/2018");
 		card.setNumber("4111111111111111");
 		return card;
@@ -583,4 +582,7 @@ public class PaymentsControllerTest {
 		extendedInfo.setDynamicMCC(helper.getRequestDynamicMCC());
 		return extendedInfo;
 	}
+        
+       
+       
 }

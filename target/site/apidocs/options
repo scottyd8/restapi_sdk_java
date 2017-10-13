@@ -1,0 +1,24 @@
+-classpath
+'C:/Users/skunchepu/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar;C:/Users/skunchepu/.m2/repository/org/glassfish/hk2/external/aopalliance-repackaged/2.4.0-b31/aopalliance-repackaged-2.4.0-b31.jar;C:/Users/skunchepu/.m2/repository/javax/ws/rs/javax.ws.rs-api/2.0.1/javax.ws.rs-api-2.0.1.jar;C:/Users/skunchepu/.m2/repository/org/glassfish/jersey/core/jersey-client/2.22/jersey-client-2.22.jar;C:/Users/skunchepu/.m2/repository/org/glassfish/hk2/hk2-api/2.4.0-b31/hk2-api-2.4.0-b31.jar;C:/Users/skunchepu/.m2/repository/commons-codec/commons-codec/1.9/commons-codec-1.9.jar;C:/Users/skunchepu/.m2/repository/javax/annotation/javax.annotation-api/1.2/javax.annotation-api-1.2.jar;C:/Users/skunchepu/.m2/repository/org/glassfish/jersey/core/jersey-common/2.22/jersey-common-2.22.jar;C:/Users/skunchepu/.m2/repository/org/glassfish/hk2/hk2-locator/2.4.0-b31/hk2-locator-2.4.0-b31.jar;C:/Users/skunchepu/.m2/repository/com/google/code/gson/gson/2.3.1/gson-2.3.1.jar;C:/Users/skunchepu/.m2/repository/org/glassfish/hk2/osgi-resource-locator/1.0.1/osgi-resource-locator-1.0.1.jar;C:/Users/skunchepu/.m2/repository/org/javassist/javassist/3.18.1-GA/javassist-3.18.1-GA.jar;C:/Users/skunchepu/.m2/repository/org/glassfish/jersey/bundles/repackaged/jersey-guava/2.22/jersey-guava-2.22.jar;C:/Users/skunchepu/.m2/repository/org/apache/httpcomponents/httpcore/4.4.1/httpcore-4.4.1.jar;C:/Users/skunchepu/.m2/repository/org/glassfish/hk2/hk2-utils/2.4.0-b31/hk2-utils-2.4.0-b31.jar;C:/Users/skunchepu/.m2/repository/org/glassfish/hk2/external/javax.inject/2.4.0-b31/javax.inject-2.4.0-b31.jar;C:/Users/skunchepu/.m2/repository/org/apache/httpcomponents/httpclient/4.4.1/httpclient-4.4.1.jar;C:/Users/skunchepu/.m2/repository/commons-lang/commons-lang/2.6/commons-lang-2.6.jar;C:/Users/skunchepu/.m2/repository/junit/junit/4.8.1/junit-4.8.1.jar'
+-encoding
+'Cp1252'
+-protected
+-sourcepath
+'C:/Users/skunchepu/Downloads/JavaSDK/restapi_sdk_java-master/src'
+-author
+-bottom
+'Copyright &#169; 2017. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'C:/Users/skunchepu/Downloads/JavaSDK/restapi_sdk_java-master/target/site/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'WorldPay 0.0.1-SNAPSHOT API'
+-linkoffline
+'http://docs.oracle.com/javase/7/docs/api' 'C:/Users/skunchepu/Downloads/JavaSDK/restapi_sdk_java-master/target/javadoc-bundle-options'
+-use
+-version
+-windowtitle
+'WorldPay 0.0.1-SNAPSHOT API'

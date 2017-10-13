@@ -16,6 +16,9 @@ public class Address {
 	private String state;
 	private String zip;
 	private String country;
+        private String company;
+        private String phone;
+        
 
 	public String getLine1() {
 		return line1;
@@ -68,6 +71,28 @@ public class Address {
 
 	public void setCountry(String value) {
 		country = value;
+	}
+        
+        /**
+	 * Company name. Defaults to US.
+	 */
+	public String getCompany() {
+		return company;
+	}
+
+	public void setCompany(String value) {
+		company = value;
+	}
+        
+         /**
+	 * Phone name. Defaults to US.
+	 */
+	public String getPhone() {
+		return phone;
+	}
+
+	public void setPhone(String value) {
+		phone = value;
 	}
 
 }

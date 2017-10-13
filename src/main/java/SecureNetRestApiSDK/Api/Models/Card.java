@@ -20,6 +20,8 @@ public class Card {
 	private String firstName;
 	private String lastName;
 	private Address address;
+        private String email;
+        private String emailReceipt;
 	private byte[] signature;
 
 	public String getTrackData() {
@@ -117,7 +119,28 @@ public class Card {
 	public void setAddress(Address value) {
 		address = value;
 	}
+        
+        /**
+	 * email of the account holder.
+	 */
+	public String getEmail() {
+		return email;
+	}
 
+	public void setEmail(String value) {
+		email = value;
+	}
+        
+         /**
+	 * email of the account holder.
+	 */
+	public String getEmailReceipt() {
+		return emailReceipt;
+	}
+
+	public void setEmailReceipt(String value) {
+		emailReceipt = value;
+	}
 	/**
 	 * Image of the signature of the cardholder as completed at the time of the
 	 * transaction.

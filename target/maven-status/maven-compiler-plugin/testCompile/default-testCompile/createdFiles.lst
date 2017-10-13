@@ -1,0 +1,7 @@
+test\controllers\PaymentsControllerTest.class
+test\java\test\controllers\AccountsControllerTest.class
+test\controllers\TransactionsControllerTest.class
+test\controllers\CustomersControllerTest.class
+test\controllers\PrevaultControllerTest.class
+test\controllers\BatchesControllerTest.class
+test\HelperTest.class

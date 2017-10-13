@@ -6,6 +6,8 @@ package SecureNetRestApiSDK.Api.Models;
 
 import java.util.ArrayList;
 import java.util.List;
+import main.java.SecureNetRestApiSDK.Api.Models.EbtData;
+
 
 /**
 * Additional data to assist in reporting, ecommerce or moto transactions, and level 2 or level 3 processing.
@@ -107,7 +109,19 @@ public class ExtendedInformation
     public void setServiceData(ServiceData value) {
         serviceData = value;
     }
+    
+    /**
+    * EBT-related transaction information.
+    */
+    private EbtData ebtData;
+    public EbtData getEbtData() {
+        return ebtData;
+    }
 
+    public void setEbtData(EbtData value) {
+        ebtData = value;
+    }
+    
     /**
     * Custom user-defined fields that can be sent with the transaction for reporting purposes.
     */
@@ -156,7 +170,7 @@ public class ExtendedInformation
         invoiceDescription = value;
     }
 	
-	/**
+    /**
      * Displays a description in addition to the merchants DBA.
      */
     private String softDescriptor = new String();
@@ -168,7 +182,7 @@ public class ExtendedInformation
         softDescriptor = value;
     }
 
-	/**
+    /**
      * Displays a 4 characters dynamic merchant category code.
      */
     private String dynamicMCC = new String();
@@ -179,6 +193,8 @@ public class ExtendedInformation
     public void setDynamicMCC(String value) {
         dynamicMCC = value;
     }
+    
+    
 
 }
 

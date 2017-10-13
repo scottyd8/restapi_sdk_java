@@ -272,8 +272,7 @@ public class CustomersControllerTest {
 
 	/**
 	 * Successful response returned from a Retrieve Customer request.
-	 * https://apidocs
-	 * .securenet.com/docs/vault.html?lang=csharp#retrievecustomer
+	 * https://apidocs.securenet.com/docs/vault.html?lang=csharp#retrievecustomer
 	 */
 	private void secureNetvaultretrievecustomerrequestreturnssuccessfully(
 			String customerId) throws Exception {
